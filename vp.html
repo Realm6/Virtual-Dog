@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Your Own Virtual Dog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Create Your Own Virtual Dog</h1>
+	</header>
+
+	<main>
+		<section id="pet-creation">
+			<h2>Design Your Dog</h2>
+			<form>
+				<label for="species">Species:</label>
+				<select name="species" id="species">
+					<option value="dog">Dog</option>
+				</select>
+
+				<label for="color">Color:</label>
+				<input type="color" name="color" id="color">
+
+				<label for="accessories">Accessories:</label>
+				<ul>
+					<li><input type="checkbox" name="accessories" value="collar">Collar</li>
+					<li><input type="checkbox" name="accessories" value="hat">Hat</li>
+					<li><input type="checkbox" name="accessories" value="bow">Bow</li>
+				</ul>
+
+				<input type="submit" value="Create Dog">
+			</form>
+		</section>
+
+		<section id="pet-display">
+			<h2>Your Dog</h2>
+			<div id="pet"></div>
+		</section>
+
+		<section id="pet-activities">
+			<h2>Interact With Your Dog</h2>
+			<button id="play">Play</button>
+			<button id="feed">Feed</button>
+			<button id="clean">Clean</button>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2023</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
